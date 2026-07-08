@@ -1,382 +1,365 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selain PSHT PUKOL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Company</title>
 
-    <style>
-        body{
-            background:#f8f9fa;
-        }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .hero{
-            background:linear-gradient(135deg,#0d6efd,#6610f2);
-            color:white;
-            padding:100px 0;
-        }
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        .card:hover{
-            transform:translateY(-8px);
-            transition:.3s;
-        }
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-        footer{
-            background:#212529;
-            color:white;
-            padding:20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">MyPSHT</a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            MyCompany
+        </a>
+
+        <button class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
+
             <ul class="navbar-nav ms-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#layanan">Layanan</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#tentang">Tentang</a>
+                    <a href="#service" class="nav-link">Service</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#kontak">Kontak</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
             </ul>
+
         </div>
+
     </div>
 </nav>
 
 <!-- Hero -->
-<section class="hero text-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">
-            Selamat Datang
-        </h1>
 
-        <p class="lead">
-            Selain PSHT pukoll rata 22
-        </p>
+<section id="home" class="hero">
 
-        <a href="#layanan" class="btn btn-light btn-lg mt-3">
-            Mulai
-        </a>
-    </div>
-</section>
+<div class="container">
 
-<!-- Layanan -->
-<section class="py-5" id="layanan">
-    <div class="container">
+<div class="row align-items-center">
 
-        <h2 class="text-center mb-5">
-            Layanan Kami
-        </h2>
+<div class="col-lg-6" data-aos="fade-right">
 
-        <div class="row">
+<h1>Membangun Website Modern & Profesional</h1>
 
-            <div class="col-md-4 mb-4">
-                <div class="card shadow">
-                    <div class="card-body text-center">
-                        <h3>🌐</h3>
-                        <h5>Web Design</h5>
-                        <p>
-                            Membuat tampilan website modern dan menarik.
-                        </p>
-                    </div>
-                </div>
-            </div>
+<p>
+Kami membantu bisnis berkembang melalui website modern,
+cepat, responsif dan menarik.
+</p>
 
-            <div class="col-md-4 mb-4">
-                <div class="card shadow">
-                    <div class="card-body text-center">
-                        <h3>💻</h3>
-                        <h5>Programming</h5>
-                        <p>
-                            Pembuatan aplikasi website menggunakan teknologi terbaru.
-                        </p>
-                    </div>
-                </div>
-            </div>
+<a href="#service" class="btn btn-primary btn-lg">
+Lihat Layanan
+</a>
 
-            <div class="col-md-4 mb-4">
-                <div class="card shadow">
-                    <div class="card-body text-center">
-                        <h3>📱</h3>
-                        <h5>Responsive</h5>
-                        <p>
-                            Website otomatis menyesuaikan ukuran layar perangkat.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Tentang -->
-<section class="bg-white py-5" id="tentang">
-    <div class="container text-center">
-
-        <h2>Tentang Kami</h2>
-
-        <p class="mt-3">
-            Kami menyediakan layanan pembuatan website yang cepat,
-            modern, dan responsif menggunakan Bootstrap 5.
-        </p>
-
-    </div>
-</section>
-
-<!-- Kontak -->
-<section class="py-5" id="kontak">
-    <div class="container">
-
-        <h2 class="text-center mb-4">
-            Hubungi Kami
-        </h2>
-
-        <div class="row justify-content-center">
-
-            <div class="col-md-6">
-
-                <form>
-
-                    <div class="mb-3">
-                        <label>Nama</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Email</label>
-                        <input type="email" class="form-control">
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Pesan</label>
-                        <textarea class="form-control" rows="5"></textarea>
-                    </div>
-
-                    <button class="btn btn-primary w-100">
-                        Kirim
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center">
-    <p class="mb-0">
-        © 2026 MyWebsite | Dibuat dengan Bootstrap 5
-    </p>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
-
-<!-- Service Section -->
-<section id="service" class="py-5">
-    <div class="container">
-
-        <div class="text-center mb-5">
-            <span class="badge bg-primary px-3 py-2">Our Services</span>
-
-            <h2 class="fw-bold mt-3">
-                Layanan yang Kami Miliki
-            </h2>
-
-            <p class="text-muted mx-auto" style="max-width:600px;">
-                Kami membantu bisnis berkembang melalui solusi digital yang modern,
-                cepat, aman, dan mudah digunakan.
-            </p>
-        </div>
-
-        <div class="row g-4">
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-window"></i>
-                    </div>
-
-                    <h4>Website Development</h4>
-
-                    <p>
-                        Website company profile, landing page,
-                        toko online, dan sistem informasi.
-                    </p>
-
-                    <a href="#">
-                        Pelajari →
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-phone"></i>
-                    </div>
-
-                    <h4>Mobile App</h4>
-
-                    <p>
-                        Pengembangan aplikasi Android
-                        dengan tampilan modern.
-                    </p>
-
-                    <a href="#">
-                        Pelajari →
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-cloud"></i>
-                    </div>
-
-                    <h4>Cloud Hosting</h4>
-
-                    <p>
-                        Hosting cepat, domain,
-                        VPS, dan cloud server.
-                    </p>
-
-                    <a href="#">
-                        Pelajari →
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-shield-check"></i>
-                    </div>
-
-                    <h4>Cyber Security</h4>
-
-                    <p>
-                        Keamanan jaringan,
-                        firewall, VPN, dan monitoring.
-                    </p>
-
-                    <a href="#">
-                        Pelajari →
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-palette"></i>
-                    </div>
-
-                    <h4>UI / UX Design</h4>
-
-                    <p>
-                        Mendesain antarmuka yang menarik,
-                        modern, dan nyaman digunakan.
-                    </p>
-
-                    <a href="#">
-                        Pelajari →
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-gear"></i>
-                    </div>
-
-                    <h4>Maintenance</h4>
-
-                    <p>
-                        Perawatan website dan server
-                        secara berkala agar selalu optimal.
-                    </p>
-
-                    <a href="#">
-                        Pelajari →
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<div class="col-lg-4 col-md-6">
-    <div class="service-card">
-
-        <img src="https://picsum.photos/600/400?random=1"
-             class="img-fluid rounded-4 mb-4"
-             alt="Website Development">
-
-        <div class="service-icon">
-            <i class="bi bi-window"></i>
-        </div>
-
-        <h4>Website Development</h4>
-
-        <p>
-            Website company profile, landing page,
-            toko online, dan sistem informasi.
-        </p>
-
-        <a href="#">Pelajari →</a>
-
-    </div>
 </div>
 
-<img src="https://picsum.photos/600/400?random=2"
-     class="img-fluid rounded-4 mb-4"
-     alt="Mobile App">
+<div class="col-lg-6 text-center" data-aos="fade-left">
 
-   <img src="https://picsum.photos/600/400?random=3"
-     class="img-fluid rounded-4 mb-4"
-     alt="Cloud Hosting">
-     
-     <img src="https://picsum.photos/600/400?random=4"
-     class="img-fluid rounded-4 mb-4"
-     alt="Cyber Security">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700"
+class="img-fluid rounded shadow">
 
-     <img src="https://picsum.photos/600/400?random=5"
-     class="img-fluid rounded-4 mb-4"
-     alt="UI UX Design">
+</div>
 
-     <img src="https://picsum.photos/600/400?random=6"
-     class="img-fluid rounded-4 mb-4"
-     alt="Maintenance">
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2>Tentang Kami</h2>
+
+<p>
+Kami menyediakan solusi digital terbaik untuk bisnis Anda.
+</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=700"
+class="img-fluid rounded">
+
+</div>
+
+<div class="col-md-6 d-flex align-items-center">
+
+<p>
+
+Website profesional membantu meningkatkan kepercayaan pelanggan,
+branding, dan penjualan secara online.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Service -->
+
+<section id="service" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2>Layanan Kami</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow border-0 h-100">
+
+<img src="https://picsum.photos/400/250?1" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Web Development</h5>
+
+<p>Membuat website profesional dan cepat.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow border-0 h-100">
+
+<img src="https://picsum.photos/400/250?2" class="card-img-top">
+
+<div class="card-body">
+
+<h5>UI / UX Design</h5>
+
+<p>Tampilan modern dan nyaman digunakan.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow border-0 h-100">
+
+<img src="https://picsum.photos/400/250?3" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Digital Marketing</h5>
+
+<p>Meningkatkan penjualan secara online.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Statistik -->
+
+<section class="counter">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col">
+
+<h2>250+</h2>
+<p>Project</p>
+
+</div>
+
+<div class="col">
+
+<h2>150+</h2>
+<p>Client</p>
+
+</div>
+
+<div class="col">
+
+<h2>5+</h2>
+<p>Tahun</p>
+
+</div>
+
+<div class="col">
+
+<h2>99%</h2>
+<p>Kepuasan</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio" class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2>Portfolio</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<img class="img-fluid rounded shadow"
+src="https://picsum.photos/500/350?4">
+</div>
+
+<div class="col-md-4">
+<img class="img-fluid rounded shadow"
+src="https://picsum.photos/500/350?5">
+</div>
+
+<div class="col-md-4">
+<img class="img-fluid rounded shadow"
+src="https://picsum.photos/500/350?6">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2>Hubungi Kami</h2>
+
+</div>
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<input class="form-control mb-3"
+placeholder="Nama">
+
+</div>
+
+<div class="col-md-6">
+
+<input class="form-control mb-3"
+placeholder="Email">
+
+</div>
+
+</div>
+
+<textarea class="form-control mb-3"
+rows="5"
+placeholder="Pesan"></textarea>
+
+<button class="btn btn-primary">
+Kirim Pesan
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<p>
+© 2026 MyCompany | Bootstrap 5
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

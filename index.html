@@ -1,242 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selain PSHT PUKOL</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background:#f8f9fa;
+        }
+
+        .hero{
+            background:linear-gradient(135deg,#0d6efd,#6610f2);
+            color:white;
+            padding:100px 0;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            transition:.3s;
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+            padding:20px;
+        }
+    </style>
 </head>
-
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>D</span>odi <span>S</span>anjaya</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">MyPSHT</a>
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Dodi Sanjaya <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
-          magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
-          voluptatum explicabo!</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#layanan">Layanan</a>
+                </li>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#tentang">Tentang</a>
+                </li>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+82 234 123 1234</h2>
-            <h2>+82 234 123 1234</h2>
-          </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+            </ul>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Medan, Sumatera Utara, Indonesia</h2>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- End Contact Section -->
+</nav>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>D</span>odi <span>S</span>anjaya</h1>
-      </div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-        </div>
-      </div>
-      <p>Copyright © 2023 Dodi Sanjaya. All rights reserved</p>
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">
+            Selamat Datang
+        </h1>
+
+        <p class="lead">
+            Selain PSHT pukoll rata 22
+        </p>
+
+        <a href="#layanan" class="btn btn-light btn-lg mt-3">
+            Mulai
+        </a>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+</section>
+
+<!-- Layanan -->
+<section class="py-5" id="layanan">
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            Layanan Kami
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3>🌐</h3>
+                        <h5>Web Design</h5>
+                        <p>
+                            Membuat tampilan website modern dan menarik.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3>💻</h3>
+                        <h5>Programming</h5>
+                        <p>
+                            Pembuatan aplikasi website menggunakan teknologi terbaru.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3>📱</h3>
+                        <h5>Responsive</h5>
+                        <p>
+                            Website otomatis menyesuaikan ukuran layar perangkat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Tentang -->
+<section class="bg-white py-5" id="tentang">
+    <div class="container text-center">
+
+        <h2>Tentang Kami</h2>
+
+        <p class="mt-3">
+            Kami menyediakan layanan pembuatan website yang cepat,
+            modern, dan responsif menggunakan Bootstrap 5.
+        </p>
+
+    </div>
+</section>
+
+<!-- Kontak -->
+<section class="py-5" id="kontak">
+    <div class="container">
+
+        <h2 class="text-center mb-4">
+            Hubungi Kami
+        </h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label>Nama</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Pesan</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100">
+                        Kirim
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <p class="mb-0">
+        © 2026 MyWebsite | Dibuat dengan Bootstrap 5
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
+
+<!-- Service Section -->
+<section id="service" class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2">Our Services</span>
+
+            <h2 class="fw-bold mt-3">
+                Layanan yang Kami Miliki
+            </h2>
+
+            <p class="text-muted mx-auto" style="max-width:600px;">
+                Kami membantu bisnis berkembang melalui solusi digital yang modern,
+                cepat, aman, dan mudah digunakan.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-window"></i>
+                    </div>
+
+                    <h4>Website Development</h4>
+
+                    <p>
+                        Website company profile, landing page,
+                        toko online, dan sistem informasi.
+                    </p>
+
+                    <a href="#">
+                        Pelajari →
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+
+                    <h4>Mobile App</h4>
+
+                    <p>
+                        Pengembangan aplikasi Android
+                        dengan tampilan modern.
+                    </p>
+
+                    <a href="#">
+                        Pelajari →
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-cloud"></i>
+                    </div>
+
+                    <h4>Cloud Hosting</h4>
+
+                    <p>
+                        Hosting cepat, domain,
+                        VPS, dan cloud server.
+                    </p>
+
+                    <a href="#">
+                        Pelajari →
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+
+                    <h4>Cyber Security</h4>
+
+                    <p>
+                        Keamanan jaringan,
+                        firewall, VPN, dan monitoring.
+                    </p>
+
+                    <a href="#">
+                        Pelajari →
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-palette"></i>
+                    </div>
+
+                    <h4>UI / UX Design</h4>
+
+                    <p>
+                        Mendesain antarmuka yang menarik,
+                        modern, dan nyaman digunakan.
+                    </p>
+
+                    <a href="#">
+                        Pelajari →
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+
+                    <h4>Maintenance</h4>
+
+                    <p>
+                        Perawatan website dan server
+                        secara berkala agar selalu optimal.
+                    </p>
+
+                    <a href="#">
+                        Pelajari →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<div class="col-lg-4 col-md-6">
+    <div class="service-card">
+
+        <img src="https://picsum.photos/600/400?random=1"
+             class="img-fluid rounded-4 mb-4"
+             alt="Website Development">
+
+        <div class="service-icon">
+            <i class="bi bi-window"></i>
+        </div>
+
+        <h4>Website Development</h4>
+
+        <p>
+            Website company profile, landing page,
+            toko online, dan sistem informasi.
+        </p>
+
+        <a href="#">Pelajari →</a>
+
+    </div>
+</div>
+
+<img src="https://picsum.photos/600/400?random=2"
+     class="img-fluid rounded-4 mb-4"
+     alt="Mobile App">
+
+   <img src="https://picsum.photos/600/400?random=3"
+     class="img-fluid rounded-4 mb-4"
+     alt="Cloud Hosting">
+     
+     <img src="https://picsum.photos/600/400?random=4"
+     class="img-fluid rounded-4 mb-4"
+     alt="Cyber Security">
+
+     <img src="https://picsum.photos/600/400?random=5"
+     class="img-fluid rounded-4 mb-4"
+     alt="UI UX Design">
+
+     <img src="https://picsum.photos/600/400?random=6"
+     class="img-fluid rounded-4 mb-4"
+     alt="Maintenance">

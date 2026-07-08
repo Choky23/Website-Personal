@@ -22,3 +22,32 @@
 .card:hover{
     transform:translateY(-10px);
 }
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#0d6efd,#6610f2);
+    color:white;
+}
+
+.hero img{
+    max-height:500px;
+}
+
+.card{
+    transition:.4s;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.card img{
+    height:500px;
+    object-fit:cover;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 45px rgba(0,0,0,.3);
+}
+
